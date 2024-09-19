@@ -6,7 +6,7 @@ tasks:
   - init: |
       ddev start -y
       ddev composer install
-      ddev drush si -y --account-pass=admin --site-name='ddev_gitpod' demo_umami
+      ddev drush si -y --account-pass=admin --site-name='drupal' minimal
       ddev drush en -y admin_toolbar
     command: |
       ddev start -y
