@@ -1,0 +1,206 @@
+<div id="header_wrapper">
+	<header id="header" role="banner">
+		<div id="mobile-menu"></div>
+		{% if logo %}
+			<div id="logo">
+				<a href="{{ front_page }}" title="{{ 'Home'|t }}">
+					<img src="{{ logo }}"/>
+				</a>
+			</div>
+		{% endif %}
+		{% if display %}
+
+			{% if page.top_right %}
+				<div id="region-top-right-wrapper">
+					{{ page.top_right }}
+					{% if page.search_region %}
+						<div class="desktop-only">
+							{{ page.search_region }}
+						</div>
+					{% endif %}
+				</div>
+			{% endif %}
+
+			{% if page.search_region %}
+				<div class="mobile-only" id="mobile-search">
+					{{ page.search_region }}
+				</div>
+			{% endif %}
+
+		{% endif %}
+
+		<h1 id="site-title">
+			<div id="site-description">{{ site_slogan }}</div>
+		</h1>
+		<div class="clear"></div>
+	</header>
+	<div class="menu_wrapper">
+		<nav id="main-menu" role="navigation" class="{{ language.language }}">
+			<a class="nav-toggle" href="#"><img src="/sites/hkggacms/files/nav-icon.png"/></a>
+			<div class="menu-navigation-container">
+				{{ main_menu_tree }}
+			</div>
+			<div class="clear"></div>
+		</nav>
+		<!-- end main-menu -->
+	</div>
+</div>
+
+<div id="container">
+	{% if sdisplay %}
+		<div id="home-slider">
+			<div class="flexslider-container">
+				{% if page.slick_show %}
+					{{ page.slick_show }}
+				{% endif %}
+			</div>
+		</div>
+	{% endif %}
+	<div class="Slideshow-region">{{ page.slideshow }}</div>
+	{% if page.top_first is not empty %}
+		{% set num1 = 1 %}
+	{% endif %}
+	{% if page.top_second is not empty %}
+		{% set num2 = 1 %}
+	{% endif %}
+	{% if page.top_third is not empty %}
+		{% set num3 = 1 %}
+	{% endif %}
+	{% set sum = (num1 is defined ? num1 : 0) ~ (num2 is defined ? num2 : 0) ~ (num3 is defined ? num3 : 0) %}
+	{% set result = sum|length %}
+	{% if result == 1 %}
+		{% set value = 'one' %}
+	{% elseif result == 2 %}
+		{% set value = 'two' %}
+	{% elseif result == 3 %}
+		{% set value = 'three' %}
+	{% endif %}
+	{% if page.top_first or page.top_second or page.top_third %}
+		<div id="top-area" class="clearfix {{ value }}">
+			{% if page.top_first %}
+				<div class="column">{{ page.top_first }}</div>
+			{% endif %}
+			{% if page.top_second %}
+				<div class="column">{{ page.top_second }}</div>
+			{% endif %}
+			{% if page.top_third %}
+				<div class="column">{{ page.top_third }}</div>
+			{% endif %}
+		</div>
+	{% endif %}
+	<div>
+		<div id="breadcrumbs">
+			{% if breadcrumb %}
+				{{ breadcrumb }}
+			{% endif %}
+		</div>
+		{% if page.breadarea %}
+			<div id="breadarea">
+				{{ page.breadarea }}
+			</div>
+		{% endif %}
+	</div>
+
+	<div class="content-sidebar-wrap">
+		{% if page.sidebar_first %}
+			<aside id="sidebar-first" role="complementary">
+				{{ page.sidebar_first }}
+			</aside>
+		{% endif %}
+		<div id="content">
+			<section id="post-content" role="main">
+				{{ messages }}
+				{% if page.content_top %}
+					<div id="content_top">{{ page.content_top }}</div>
+				{% endif %}
+				{{ title_prefix }}
+				{% if title %}
+					<h1 class="page-title">{{ title }}</h1>
+				{% endif %}
+				{{ title_suffix }}
+				{% if tabs.primary %}
+					<div class="tabs-wrapper">{{ tabs }}</div>
+				{% endif %}
+				{{ page.help }}
+				<div id="sidebar-second-mobile" role="complementary"></div>
+				<!-- /#sidebar-first -->
+
+				{% if action_links is not empty %}
+					<ul class="action-links">
+						{{ action_links }}
+					</ul>
+				{% endif %}
+				{{ page.content }}
+				<div class="last-update clearfix">
+					{% if node is not empty %}
+						{% if node.type in ['page', 'events', 'news', 'resources', 'album'] %}
+							{{ 'Last Update Date: @changed'|t({'@changed': node.changed.value|date('Y-m-d')}) }}
+						{% endif %}
+					{% endif %}
+				</div>
+			</section>
+			<!-- /#main -->
+		</div>
+
+	</div>
+	{% if page.sidebar_second is not empty %}
+		<aside id="sidebar-second" role="complementary">
+			{{ page.sidebar_second }}
+		</aside>
+	{% endif %}
+</div>
+
+<div>
+	{% if page.content_bottom is not empty %}
+		<div id="content_bottom">
+			{{ page.content_bottom }}
+		</div>
+	{% endif %}
+</div>
+
+<div id="footer">
+	<div id="footer_wrapper">
+		{% if page.footer_first is not empty %}
+			{% set num01 = 1 %}
+		{% endif %}
+		{% if page.footer_second is not empty %}
+			{% set num02 = 1 %}
+		{% endif %}
+		{% if page.footer_third is not empty %}
+			{% set num03 = 1 %}
+		{% endif %}
+
+		{% set sum1 = (num01 is defined ? num01 : 0) ~ (num02 is defined ? num02 : 0) ~ (num03 is defined ? num03 : 0) %}
+		{% set result1 = sum1|length %}
+		{% if result1 == 1 %}
+			{% set value1 = 'one' %}
+		{% elseif result1 == 2 %}
+			{% set value1 = 'two' %}
+		{% elseif result1 == 3 %}
+			{% set value1 = 'three' %}
+		{% endif %}
+
+		{% if page.footer_first or page.footer_second or page.footer_third %}
+			<div id="footer-area" class="clearfix {{ value1 }}">
+				{% if page.footer_first %}
+					<div class="column">{{ page.footer_first }}</div>
+				{% endif %}
+				{% if page.footer_second %}
+					<div class="column">{{ page.footer_second }}</div>
+				{% endif %}
+				{% if page.footer_third %}
+					<div class="column">{{ page.footer_third }}</div>
+				{% endif %}
+			</div>
+		{% endif %}
+	</div>
+	<div class="footer_credit">
+		<div class="footer_inner_credit">
+			{% if page.footer %}
+				<div id="foot">
+					{{ page.footer }}
+				</div>
+			{% endif %}
+		</div>
+	</div>
+</div>

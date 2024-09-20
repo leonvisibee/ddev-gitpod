@@ -1,6 +1,7 @@
-name: responsive_green
+name: Responsive Green
 type: theme
-'base theme': stable9
+# 'base theme': stable9
+'base theme': false
 version: 1.0.0
 libraries:
   - responsive_green/base
@@ -20,3 +21,35 @@ libraries-extend:
 description: ''
 core_version_requirement: ^10
 generator: 'starterkit_theme:10.3.5'
+
+regions:
+  top_right: Top Right
+  lang_region: Language Region
+  search_region: Search Region
+  slick_show: Slick Show
+  sidebar_first: First Sidebar
+  sidebar_second: Second Sidebar
+  slideshow: Slideshow
+  top_first: Header First
+  top_second: Header Second
+  top_third: Header Third
+  breadarea: Breadarea
+  content_top: Content Top
+  content: Content
+  content_bottom: Content Bottom
+  footer_first: Bottom First
+  footer_second: Bottom Second
+  footer_third: Bottom Third
+  footer: Footer
+  menu_bottom: Menu Bottom
+
+features:
+  - logo
+  - name
+  - slogan
+  - node_user_picture
+  - comment_user_picture
+  - comment_user_verification
+  - favicon
+  - main_menu
+  - secondary_menu
