@@ -1,0 +1,49 @@
+{
+    "_hash": "c0c858480135dcf1c4c83356ce5600609988d83567dc6fc42e895f844deadbb4",
+    "patches": {
+        "drupal/core": [
+            {
+                "package": "drupal/core",
+                "description": "content_translation_nullable_array",
+                "url": "patches/content_translation_nullable_array.patch",
+                "sha256": "1e97414ebf4750445916a68699f4dca95dfaabdca6c8fd1df4205434b210bb32",
+                "depth": 2,
+                "extra": {
+                    "provenance": "root"
+                }
+            },
+            {
+                "package": "drupal/core",
+                "description": "field_nullable_array",
+                "url": "patches/field_nullable_array.patch",
+                "sha256": "346dfc043f5b32f970b7e1d4fa3df7c082840357e6c16f57f9c5c1ece3db4cb1",
+                "depth": 2,
+                "extra": {
+                    "provenance": "root"
+                }
+            },
+            {
+                "package": "drupal/core",
+                "description": "file_skip_copy",
+                "url": "patches/core_file_skip_copy.patch",
+                "sha256": "acd46e882cf137266ee7ae61ef5383106431f60425870162cf1963c00ce616ca",
+                "depth": 2,
+                "extra": {
+                    "provenance": "root"
+                }
+            }
+        ],
+        "drupal/migmag": [
+            {
+                "package": "drupal/migmag",
+                "description": "migmag_rollbackable",
+                "url": "patches/migmag_rollbackable.patch",
+                "sha256": "b32b59166e1235a31e0314cd85dbb92b11f265dda61fa41dd406c71f9e6af998",
+                "depth": 1,
+                "extra": {
+                    "provenance": "root"
+                }
+            }
+        ]
+    }
+}

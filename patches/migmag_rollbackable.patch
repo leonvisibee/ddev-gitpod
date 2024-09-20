@@ -1,0 +1,13 @@
+diff --git a/migmag_rollbackable/migmag_rollbackable.info.yml b/migmag_rollbackable/migmag_rollbackable.info.yml
+index de356d4..b39625f 100644
+--- a/migmag_rollbackable/migmag_rollbackable.info.yml
++++ b/migmag_rollbackable/migmag_rollbackable.info.yml
+@@ -3,6 +3,8 @@ type: module
+ description: Provides Drupal core compatible rollbackable migration destination plugins.
+ package: Migration
+ core_version_requirement: ^8.9 || ^9 || ^10
++dependencies:
++  - drupal:migrate:migrate
+ 
+ # Information added by Drupal.org packaging script on 2022-07-29
+ version: '1.8.1'

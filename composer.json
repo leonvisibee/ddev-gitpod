@@ -16,10 +16,56 @@
     ],
     "require": {
         "composer/installers": "^2.0",
+        "cweagans/composer-patches": "~2.0",
         "drupal/admin_toolbar": "^3.4",
+        "drupal/better_exposed_filters": "^7.0",
+        "drupal/bigmenu": "^2.0@RC",
+        "drupal/calendar": "^1.0@beta",
+        "drupal/ckeditor": "^1.0",
+        "drupal/colorbox": "^2.1",
         "drupal/core-composer-scaffold": "^10.1",
         "drupal/core-project-message": "^10.1",
         "drupal/core-recommended": "^10.1",
+        "drupal/ds": "^3.23",
+        "drupal/easy_breadcrumb": "^2.0",
+        "drupal/editor_advanced_link": "^2.2",
+        "drupal/exif_orientation": "^1.4",
+        "drupal/facets": "^2.0",
+        "drupal/filefield_paths": "^1.0@beta",
+        "drupal/filefield_sources": "^2.0@dev",
+        "drupal/gnode": "^3.2",
+        "drupal/group": "^3.2",
+        "drupal/link_attributes": "^2.1",
+        "drupal/linkit": "^6.1",
+        "drupal/maillog": "^1.1",
+        "drupal/media_bulk_upload": "^3.0",
+        "drupal/media_gallery": "^2.2",
+        "drupal/media_migration": "^1.0@alpha",
+        "drupal/menu_block": "^1.13",
+        "drupal/menu_link_attributes": "^1.5",
+        "drupal/metatag": "^2.0",
+        "drupal/migrate_file": "^2.1",
+        "drupal/migrate_tools": "^6.0",
+        "drupal/migrate_upgrade": "^4.0",
+        "drupal/og": "^1.0@alpha",
+        "drupal/og_ui": "^1.0@alpha",
+        "drupal/paragraphs": "^1.18",
+        "drupal/pathauto": "^1.13",
+        "drupal/plupload": "^2.1",
+        "drupal/prev_next": "^2.0@beta",
+        "drupal/project_browser": "^1.0@beta",
+        "drupal/rdf": "^2.1",
+        "drupal/rules": "^4.0",
+        "drupal/search_api": "^1.35",
+        "drupal/smtp": "^1.4",
+        "drupal/stage_file_proxy": "^3.1",
+        "drupal/ultimate_cron": "^2.0@alpha",
+        "drupal/upgrade_status": "^4.3",
+        "drupal/views_bulk_operations": "^4.2",
+        "drupal/views_migration": "^1.2",
+        "drupal/webform": "^6.2",
+        "drupal/workbench": "^1.5",
+        "drupal/workflow": "^1.8",
         "drush/drush": "^12.3"
     },
     "conflict": {
@@ -33,7 +79,8 @@
             "drupal/core-composer-scaffold": true,
             "drupal/core-project-message": true,
             "phpstan/extension-installer": true,
-            "dealerdirect/phpcodesniffer-composer-installer": true
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "cweagans/composer-patches": true
         },
         "sort-packages": true
     },
@@ -92,6 +139,16 @@
                 "  * Remove the plugin that prints this message:",
                 "      composer remove drupal/core-project-message"
             ]
+        },
+        "patches": {
+            "drupal/core": {
+                "content_translation_nullable_array": "patches/content_translation_nullable_array.patch",
+                "field_nullable_array": "patches/field_nullable_array.patch",
+                "file_skip_copy": "patches/core_file_skip_copy.patch"
+            },
+            "drupal/migmag": {
+                "migmag_rollbackable": "patches/migmag_rollbackable.patch"
+            }
         }
     }
 }

@@ -1,0 +1,17 @@
+diff --git a/core/modules/file/migrations/d7_file.yml b/core/modules/file/migrations/d7_file.yml
+index 4c4b54f..da5bb2e 100644
+--- a/core/modules/file/migrations/d7_file.yml
++++ b/core/modules/file/migrations/d7_file.yml
+@@ -49,11 +49,7 @@ process:
+         - filepath
+     -
+       plugin: urlencode
+-  uri:
+-    plugin: file_copy
+-    source:
+-      - '@source_full_path'
+-      - uri
++  uri: uri
+   filemime: filemime
+   # No need to migrate filesize, it is computed when file entities are saved.
+   # filesize: filesize
