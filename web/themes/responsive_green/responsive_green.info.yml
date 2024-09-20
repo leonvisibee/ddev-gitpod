@@ -1,0 +1,22 @@
+name: responsive_green
+type: theme
+'base theme': stable9
+version: 1.0.0
+libraries:
+  - responsive_green/base
+  - responsive_green/messages
+  - core/normalize
+libraries-extend:
+  user/drupal.user:
+    - responsive_green/user
+  core/drupal.dropbutton:
+    - responsive_green/dropbutton
+  core/drupal.dialog:
+    - responsive_green/dialog
+  file/drupal.file:
+    - responsive_green/file
+  core/drupal.progress:
+    - responsive_green/progress
+description: ''
+core_version_requirement: ^10
+generator: 'starterkit_theme:10.3.5'

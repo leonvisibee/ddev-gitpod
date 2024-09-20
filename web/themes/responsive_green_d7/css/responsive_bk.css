@@ -1,0 +1,319 @@
+@media only screen and (max-width: 1661px), only screen and (max-device-width: 1661px) {
+	.page-album .better-select.form-checkboxes-scroll,.page-album .better-select.form-checkboxes-scroll{
+		min-width: 100px;
+	}
+	.page-album .views-exposed-widget,.page-album-en .views-exposed-widget{
+		display:block;
+	}
+}
+@media only screen and (max-width: 1549px), only screen and (max-device-width: 1600px) {
+	#block-views-slick-views-block-1 {
+		height: auto;
+	}
+
+}
+	.front #post-content, .page-frontpage-en #post-content {
+		padding: 0 20px;
+		padding:0;
+	}
+@media only screen and (max-width: 1499px), only screen and (max-device-width: 1500px) {
+
+	/* #news-content>.views-row, #first-news .views-row {
+		width: 320px;
+	}
+	.front #post-content h1, .page-frontpage-en #post-content h1 {
+		margin-left: -30px;
+	} */
+}
+
+@media only screen and (max-width: 1420px), only screen and (max-device-width: 1420px) {
+	#news-content>.views-row, #first-news .views-row {
+		width: 300px;
+	}
+}
+
+@media only screen and (max-width: 1369px), only screen and (max-device-width: 1379px) {
+	#main-menu a {
+		padding: 8px;
+		/* font-size: 90%; */
+	}
+	#news-content>.views-row, #first-news .views-row {
+		/*width: 280px;*/
+	}
+	.no-sidebars .content-sidebar-wrap {
+		    width: 100%;
+				    margin: 0 auto;
+    float: none;
+}
+	}
+
+@media only screen and (max-width: 1249px), only screen and (max-device-width: 1349px) {
+	#block-views-slick-views-block-1 {
+		height: 270px;
+	}
+	#block-views-slick-views-block-1 .slick-list{height:270px; overflow:hidden}
+	
+	#logo img {
+		width: 80%;
+	}
+	.no-sidebars .content-sidebar-wrap {
+		    /*width: 100%;*/
+	}
+	.front #post-content h1, .page-frontpage-en #post-content h1 {
+		    margin-left: -280px;
+	}
+}
+
+@media only screen and (max-width: 1169px), only screen and (max-device-width: 1170px) {
+	#news-content>.views-row, #first-news .views-row {
+		width: 320px;
+	}
+}
+
+@media only screen and (max-width: 1270px), only screen and (max-device-width: 1270px) {
+	#main-menu a {
+		/* padding: 3px; */
+		/* line-height: 1em; */
+	}
+	/* #main-menu.en a {
+		font-size: 80%;
+	} */
+	
+	.slick-dots {
+		bottom: -5px;
+	}
+	
+	.slick-dots li {
+		margin: 5px 8px;
+	}
+}
+
+@media only screen and (max-width: 1100px), only screen and (max-device-width: 1105px) {
+	.content-sidebar-wrap {
+		max-width: 100% !important;
+		margin: 0 0 1% 10.5%;
+	}
+	
+	body.sidebar-second .content-sidebar-wrap {
+		width: 80% !important;
+		
+	}
+	body.sidebar-second #sidebar-second {
+		width: 100%;
+	}
+}
+
+.btnFilter {
+	background: url("/sites/hkggacms/files/icon-filter.png") 50% 50% / cover no-repeat;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	z-index: 9999;
+	display:none;
+	margin: 10px;
+}
+body.sidebar-second #sidebar-second {
+	display: block;
+}
+
+@media only screen and (max-width: 970px), only screen and (max-device-width: 970px) {
+	
+
+	#logo {
+		margin: 45px 10px;
+	}
+	.region-top-right {
+		margin-top: -3px;
+	}
+	
+	.menu_wrapper {
+		border: 0;
+		background: none;
+		display:none;
+	}
+	
+	.view-indexpage #first-news,.view-indexpage #news-content {
+		padding:0 20px;
+		width:60%;
+	}
+	
+	#main-menu ul.menu li {
+		margin: 0;
+		background: #7843A3;
+	}
+	
+	#mobile-menu {
+		display: block;
+	}
+	
+
+
+	#mobile-menu .nav-toggle, #mobile-menu .nav-toggle:hover {
+		display: inline;
+		background: none;
+		text-align: left;
+		border: 0;
+	}
+	
+	#mobile-menu #main-menu {
+		max-width: 100%;
+		
+	}
+	
+	#main-menu ul {
+      display: none;
+	  
+	  /*width: 190px;*/
+    }
+
+    #main-menu li ul {
+		position: static;
+		/*border-top: 1px #EEE solid;
+		border-bottom: 1px #EEE solid;*/
+    }
+
+    #main-menu li ul ul {
+      margin: 0 !important;
+		/*padding: 10px 40px;*/
+    }
+
+    #main-menu ul,
+    #main-menu li {
+      float: none;
+      max-width: 100%;
+			background: #FFF;
+    }
+
+    #main-menu a {
+		width: 100%;
+		padding: 10px;
+		color: #FFFFFF;
+		background: #7843A3;
+		border-bottom: 1px solid #51225E;
+		font-size: larger;
+		text-align: left;
+    }
+	
+    #main-menu a:hover, #main-menu a.active {
+      color: #fff !important;
+    }
+
+    #main-menu li li {
+		background: #6A3E8B;
+	}
+
+    #main-menu li li a {
+		text-align: left;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		padding: 10px 20px;
+		
+		border-bottom-width: 1px;
+    }
+
+    #main-menu li li li a {
+      background: inherit;
+		padding: 10px 30px;
+    }
+
+		
+			#main-menu a:hover,
+			#main-menu li > a.active {
+			background: transparent;
+			background: none;
+			}
+		
+    #main-menu li:hover > ul,
+    #main-menu li li:hover > ul,
+    #main-menu li li li:hover > ul {
+      display: none;
+    }
+
+    .drop-down-toggle {
+		display: block;
+		top: 5px;
+    }
+
+    #main-menu li li .drop-down-toggle {
+      top: 5px;
+    }
+
+    /*#main-menu .nav-toggle {
+      display: block;
+      font-size: 15px;
+      font-weight: bold;
+    }*/
+	
+	.btnFilter {
+		display: block;
+	}
+	
+	body.sidebar-second #sidebar-second {
+/*		display: none;*/
+	}
+	
+	#sidebar-second {
+		clear: both;
+		width: 300px !important;
+		position: absolute;
+		top: 250px;
+		right: 0px;
+		z-index: 100;
+		background: #FFF;
+		padding: 10px;
+	}
+	
+	.not-front #content_bottom .block .content{
+		margin:0;
+	}
+	
+}
+
+@media only screen and (max-width:960px), only screen and (max-device-width: 960px) {
+	body.sidebar-second .content-sidebar-wrap {
+		width: auto !important;
+		width: 80% !important;
+		clear: both;
+	}
+	
+	#first-news .views-field-field-news-image{
+		text-align:center;
+	}
+	#first-news .views-row img{
+		width:50%;
+	}
+}
+
+@media only screen and (max-width:760px), only screen and (max-device-width: 760px) {
+	body.sidebar-second .content-sidebar-wrap {
+		width: 80% !important;
+		clear: both;
+	}
+	.view-resource .views-field-title {
+		max-width: 80%;
+	}
+}
+
+@media only screen and (max-width:750px), only screen and (max-device-width: 750px) {
+	.front #block-block-10, .page-frontpage-en #block-block-10 {
+		display:none;
+	}
+	
+}
+
+@media only screen and (max-width: 400px), only screen and (max-device-width: 400px) {
+	.view-resource .views-field-title {
+		max-width: 100%;
+	}
+	.view-resource .res-files li {
+		clear:both;
+	}
+}
+
+@media only screen and (max-width: 479px), only screen and (max-device-width: 479px) {
+}
+
+@media only screen and (max-width: 959px)), only screen and (max-device-width: 959px) {
+
+}
